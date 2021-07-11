@@ -1,0 +1,47 @@
+.Movie-container-All{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.You{
+
+    color: white;
+    display: flex;
+    margin-left: 4vw;
+
+}
+
+
+.Movie-pics{
+
+    width:10.5vw;
+    display: flex;
+}
+
+
+.von{
+
+    float: left;
+    margin-left: 2.5vw;
+    margin-top: 1vw;
+}
+
+
+.con-text{
+
+    font-size: 1vw;
+    color: #B6B6B6;
+    
+}
+
+
+.date-text{
+
+    font-size: 0.8vw;
+    color: #B6B6B6;
+    
+}
+
+

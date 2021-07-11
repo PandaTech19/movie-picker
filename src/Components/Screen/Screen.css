@@ -1,0 +1,70 @@
+.Screen-container{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vw;
+  position: fixed;
+  flex-direction: column;
+  
+  }
+
+
+ 
+
+  .bg-title{
+
+  position: absolute;
+  left: 81px;
+  top: 350px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5vw;
+  color: #FFFFFF;
+
+  }
+
+
+
+
+.bg-descrip{
+
+  position: absolute;
+  width:65vw;
+  height: 206px;
+  left: 82px;
+  top: 420px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 33px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.144);
+  border: none;
+
+}
+
+.bg-rating{
+  display: flex;
+  margin-top: 30vw;
+  margin-right: 86vw;
+}
+
+.bg-star{
+ 
+  width: 1.5vw;
+ 
+}
+
+.bg-rate{
+  font-size: 2vw;
+  margin-left: 1vw;
+  color: #FFFFFF;
+
+}
+
+
+
