@@ -70,9 +70,9 @@ export default function Allseries() {
 
                                 <img className="series-pics" src={Tv.poster.asset.url} alt="poster-image" />
 
-                                <span className="ser-text" key={Tv.title}>{Tv.title}</span>
+                                <h2 className="ser-text" key={Tv.title}>{Tv.title}</h2>
 
-                                <span className="date-ser" key={Tv.releaseDate}>{Tv.releaseDate}</span>
+                                <h2 className="date-ser" key={Tv.releaseDate}>{Tv.releaseDate}</h2>
 
                             </div>
 
