@@ -66,14 +66,17 @@ export default function Allseries() {
 
                         <div className="ser" key={Tv}>
 
+
                             <div className="pic-container">
 
-                                <img className="series-pics" src={Tv.poster.asset.url} alt="poster-image" />
+                                <Link to={"/" + Tv.slug.current} key={Tv.slug.current}>
 
-                                <h2 className="ser-text" key={Tv.title}>{Tv.title}</h2>
+                                    <img className="series-pics" src={Tv.poster.asset.url} alt="poster-image" />
 
-                                <h2 className="date-ser" key={Tv.releaseDate}>{Tv.releaseDate}</h2>
+                                    <h2 className="ser-text" key={Tv.title}>{Tv.title}</h2>
 
+                                    <h2 className="date-ser" key={Tv.releaseDate}>{Tv.releaseDate}</h2>
+                                </Link>
                             </div>
 
                         </div>
@@ -96,8 +99,4 @@ export default function Allseries() {
 
 
 
-{/*
 
-                           
-
-                    </Link>*/}

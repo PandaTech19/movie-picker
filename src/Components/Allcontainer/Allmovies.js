@@ -53,7 +53,7 @@ export default function Allmovies() {
 
         <div className="Movie-container-All">
 
-          
+
 
             <h1 className="You">Trending Movies</h1>
 
@@ -65,17 +65,20 @@ export default function Allmovies() {
 
                     moviedata.map((movie) => (
 
-                      
+
 
                         <div className="ser" key={movie}>
 
                             <div className="pic-container">
 
-                                <img className="series-pics" src={movie.poster.asset.url} alt="poster-image" />
+                                <Link to={"/" + movie.slug.current} key={movie.slug.current}>
 
-                                <h2 className="ser-text" key={movie.title}>{movie.title}</h2>
+                                    <img className="series-pics" src={movie.poster.asset.url} alt="poster-image" />
 
-                                <h2 className="date-ser" key={movie.releaseDate}>{movie.releaseDate.substr(0,4)}</h2>
+                                    <h2 className="ser-text" key={movie.title}>{movie.title}</h2>
+
+                                    <h2 className="date-ser" key={movie.releaseDate}>{movie.releaseDate.substr(0, 4)}</h2>
+                                </Link>
 
                             </div>
 
