@@ -43,7 +43,7 @@ export default function App() {
         <Switch>
           <Route path="/:slug">
             <Onepick />
-            <div className="end" />
+           
           </Route>
         </Switch>
 
