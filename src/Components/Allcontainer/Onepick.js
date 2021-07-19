@@ -72,8 +72,7 @@ export default function Onepick() {
 
             <div className="One-description">
                 <div>Overview</div>
-                <Portabletext  blocks={Onepick.overview} />
-
+                <Portabletext blocks={Onepick.overview}/>
             </div>
 
 
