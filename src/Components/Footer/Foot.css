@@ -3,7 +3,6 @@
     display: flex;
     margin-top: 10vw;
     flex-direction: column;
-    margin-right: 79vw;
 }
 
 .Foot-head{
@@ -11,6 +10,7 @@
     color: #E2E2E2;
     font-family: Inter;
     font-style: normal;
+    margin-left: 3vw;
     font-weight: bold;
     font-size: 2.5vw;
 }
@@ -19,7 +19,7 @@
 
     color: #E2E2E2;
     margin-top: 2vw;
-    margin-left: 0.5vw;
+    margin-left: 3vw;
     font-family: Inter;
     font-style: normal;
     font-weight: bold;

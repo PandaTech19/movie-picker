@@ -5,12 +5,22 @@
     justify-content: center;
 }
 
+
+
 .You{
 
     color: white;
     display: flex;
     margin-left: 4vw;
 
+}
+
+.mov{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2.5vw;
+  
 }
 
 
@@ -46,3 +56,9 @@
 }
 
 
+
+
+.pic-container{
+  background: #050E12;
+  
+}

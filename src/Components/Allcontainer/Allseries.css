@@ -18,6 +18,8 @@
 .pic-container{
     display: flex;
     flex-direction: column;
+    background: #050E12;
+    margin-top: 1vw;
 }
 
 
@@ -28,6 +30,8 @@
     margin-top:3vw;
     width:10.5vw;
     height:15vw;
+    
+    
 }
 
 
@@ -36,6 +40,8 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 2.5vw;
+   
+    
 }
 
 

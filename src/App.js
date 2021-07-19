@@ -5,7 +5,7 @@ import Allmovies from './Components/Allcontainer/Allmovies';
 import Allseries from './Components/Allcontainer/Allseries';
 import Onemovie from './Components/Allcontainer/Onemovie';
 import Footer from './Components/Footer/Foot';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 /***************************************************************/
@@ -25,29 +25,36 @@ export default function App() {
     <Router>
 
       <div>
-
         <Head />
-        <Screen />
 
-        <div className="content-area">
-
-
-
-          <Route exact path="/" component={Allmovies} />
-
-          <Route exact path="/" component={Allseries}/>
-
-          <Route path="/:slug" component={Onemovie} />
-
-          <Footer />
-
-          <div className="end" />
+        <div>
+          <Switch>
+            <Route exact path="/">
+              <Screen />
+              <Allmovies />
+              <Allseries />
+            </Route>
+          </Switch>
 
         </div>
 
+        <Switch>
+          <Route path="/:slug">
+            <Onemovie />
+          </Route>
+        </Switch>
+
+        <Footer/>
+        <div className="end"/>
+
+
+
       </div>
 
-    </Router>
+
+
+
+    </Router >
   )
 }
 

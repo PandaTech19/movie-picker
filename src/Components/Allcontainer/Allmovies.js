@@ -67,11 +67,11 @@ export default function Allmovies() {
 
 
 
-                        <div className="ser" key={movie}>
+                        <div className="mov" key={movie}>
 
                             <div className="pic-container">
 
-                                <Link to={"/" + movie.slug.current} key={movie.slug.current}>
+                                <Link style={{textDecoration:"none"}} to={"/" + movie.slug.current} key={movie.slug.current}>
 
                                     <img className="series-pics" src={movie.poster.asset.url} alt="poster-image" />
 

@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 export default function Allseries() {
 
 
-
     const [seriesdata, setseries] = useState(null);
 
 
@@ -48,12 +47,9 @@ export default function Allseries() {
     return (
 
 
-
         <div className="series-container-All">
 
-
-            <h1 className="Tv">Trending Tv</h1>
-
+            <h1 className="Tv">Trending TVs</h1>
 
             <div className="ser">
 
@@ -62,14 +58,11 @@ export default function Allseries() {
 
                     seriesdata.map((Tv) => (
 
-
-
                         <div className="ser" key={Tv}>
-
 
                             <div className="pic-container">
 
-                                <Link to={"/" + Tv.slug.current} key={Tv.slug.current}>
+                                <Link style={{textDecoration:"none"}} to={"/" + Tv.slug.current} key={Tv.slug.current}>
 
                                     <img className="series-pics" src={Tv.poster.asset.url} alt="poster-image" />
 
