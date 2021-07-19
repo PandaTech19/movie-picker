@@ -3,7 +3,7 @@ import Head from "./Components/Head/Head";
 import Screen from './Components/Screen/Screen';
 import Allmovies from './Components/Allcontainer/Allmovies';
 import Allseries from './Components/Allcontainer/Allseries';
-import Onemovie from './Components/Allcontainer/Onemovie';
+import Onepick from './Components/Allcontainer/Onepick';
 import Footer from './Components/Footer/Foot';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -33,6 +33,8 @@ export default function App() {
               <Screen />
               <Allmovies />
               <Allseries />
+              <Footer />
+              <div className="end" />
             </Route>
           </Switch>
 
@@ -40,12 +42,12 @@ export default function App() {
 
         <Switch>
           <Route path="/:slug">
-            <Onemovie />
+            <Onepick />
+            <div className="end" />
           </Route>
         </Switch>
 
-        <Footer/>
-        <div className="end"/>
+
 
 
 
