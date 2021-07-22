@@ -27,7 +27,7 @@ export default function App() {
       <div>
         <Head />
 
-        <div>
+       {/* <div>
           <Switch>
             <Route exact path="/">
               <Screen />
@@ -45,13 +45,13 @@ export default function App() {
             <Onepick />
             <div className="end2" />
           </Route>
-        </Switch>
+        </Switch>*/}
 
 
 
 
 
-      </div>
+       </div>
 
 
 
