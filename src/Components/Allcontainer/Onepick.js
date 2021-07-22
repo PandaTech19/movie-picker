@@ -49,9 +49,9 @@ export default function Onepick() {
 
     console.log(Onepick)
 
- 
+
     return (
-        <div className="One-container">
+        <div>
 
             <div className="One-container" style={{ background: `url(${Onepick.posterpreview.asset.url})`, backgroundSize: "cover" }} />
 
@@ -70,7 +70,6 @@ export default function Onepick() {
                         <button className="Trailer-btn" onClick={() => Opentrailer(Onepick.url)}>Play Trailer</button>
                     </div>
 
-
                 </div>
 
 
@@ -83,7 +82,7 @@ export default function Onepick() {
             </div>
 
 
-        </div>
+        </div >
     )
 }
 

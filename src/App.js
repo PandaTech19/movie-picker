@@ -14,7 +14,7 @@ import './Components/Head/Head.css';
 import './Components/Screen/Screen.css';
 import './Components/Allcontainer/Allmovie.css'
 import './Components/Allcontainer/Allseries.css'
-import './Components/Allcontainer/Onemovie.css'
+import './Components/Allcontainer/Onepick.css'
 import './Components/Footer/Foot.css';
 
 
@@ -48,13 +48,7 @@ export default function App() {
         </Switch>
 
 
-
-
-
        </div>
-
-
-
 
     </Router >
   )

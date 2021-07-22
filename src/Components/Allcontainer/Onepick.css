@@ -2,14 +2,12 @@
     display: flex;
     justify-content: center;
     width: 98.8vw;
-    height: 50vw;
+    height: 40vw;
     position: static;
     flex-direction: column;
 }
 
-.pos {
-    display: flex;
-}
+
 
 .small {
     width: 13vw;
@@ -21,6 +19,7 @@
     display: flex;
     margin-left: 5vw;
     flex-direction: column;
+    
 }
 
 .Text-title {
@@ -84,4 +83,74 @@
     margin-left: 5vw;
     background: #FFDA18;
     border-radius: 3px;
+}
+
+@media(max-Width:1200px){
+
+    .One-container {
+        
+        height: 60vw;
+      
+    }
+
+    .small {
+
+        width: 25vw;
+        margin-top: -15vw;
+        margin-left: 2vw;
+       
+    }
+
+    .Text {
+        display: flex;
+        margin-left: -25vw;
+        margin-top: 30vw;
+        
+    }
+
+
+    .Text-title {
+       
+        font-size: 6vw;
+        margin-top: 1vw;
+        color: #EDEDED;
+    }
+
+    .Text-rate {
+        display: flex;
+        margin-top: 1vw;
+       
+    }
+
+    .star {
+        width: 8vw;
+        height: 8vw;
+        margin-top: 2vw;
+    }
+
+    .rate{
+
+        font-size: 9.5vw;
+        margin-left: 1vw;
+        margin-top: 0.5vw;
+    }
+
+
+    .Trailer-btn{
+
+        width: 40vw;
+        height: 49px;
+        font-size: 6vw;
+        border-radius: 5vw;
+    }
+
+    .One-description{
+
+        font-size: 6vw;
+        line-height: 8vw;
+        margin-right: 5vw;
+    }
+
+
+    
 }
