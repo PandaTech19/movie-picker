@@ -142,6 +142,7 @@
         height: 49px;
         font-size: 6vw;
         border-radius: 5vw;
+        background: rgba(255, 255, 0, 0.808);
     }
 
     .One-description{
