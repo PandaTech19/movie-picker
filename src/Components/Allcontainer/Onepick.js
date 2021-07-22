@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import SanityClient from '../Client.js';
 import Portabletext from '@sanity/block-content-to-react';
 import imageUrlBuilder from "@sanity/image-url";
@@ -8,6 +8,11 @@ import Star from './star.jpg';
 
 
 const builder = imageUrlBuilder(SanityClient);
+
+const Opentrailer = (url) => {
+    window.open(url, '_blank', "This is the trailer")
+}
+
 function urlFor(source) {
     return builder.image(source);
 }
@@ -26,6 +31,7 @@ export default function Onepick() {
                 slug,
                 overview,
                 rating,
+                url,
                 posterpreview{asset->{_id,url}},
                 poster{asset->{_id,url}},
                
@@ -61,6 +67,7 @@ export default function Onepick() {
                     <div className="Text-rate">
                         <img className="star" src={Star} />
                         <span className="rate">{Onepick.rating}</span>
+                        <button className="Trailer-btn" onClick={() => Opentrailer(Onepick.url)}>Play Trailer</button>
                     </div>
 
 
@@ -72,7 +79,7 @@ export default function Onepick() {
 
             <div className="One-description">
                 <div>Overview</div>
-                <Portabletext blocks={Onepick.overview}/>
+                <Portabletext blocks={Onepick.overview} />
             </div>
 
 

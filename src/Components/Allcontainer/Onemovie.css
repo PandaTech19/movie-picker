@@ -60,7 +60,7 @@
     display: flex;
     text-align: left;
     margin-top: 2vw;
-    margin-left:4vw ;
+    margin-left: 4vw;
     margin-right: 10vw;
     flex-direction: column;
     font-family: Roboto;
@@ -71,3 +71,17 @@
     color: #FFFFFF;
 }
 
+.Trailer-btn {
+    width: 190px;
+    height: 49px;
+    font-size: 1.5vw;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-left: 5vw;
+    background: #FFDA18;
+    border-radius: 3px;
+}
