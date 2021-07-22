@@ -21,6 +21,7 @@ export default function Screen() {
                 title,
                 description,
                 rating,
+                year,
                 poster{asset->{url},
            
 
@@ -41,21 +42,21 @@ export default function Screen() {
 
                     <div style={{ background: `url(${Bg.poster.asset.url})`, backgroundSize: "cover" }} className="Screen-container">
 
-                       
-                            <h1 className="bg-title" key={Bg.title}>{Bg.title}</h1>
 
-                            <div className="bg-descrip"><Portabletext className="block" blocks={Bg.description} /></div>
+                        <h1 className="bg-title" key={Bg.title}>{Bg.title}</h1>
 
-                            <div className="bg-rating">
+                        <div className="bg-descrip"><Portabletext className="block" blocks={Bg.description} /></div>
+
+                        <div className="bg-rating">
+
+                            <span className="screen-year">{Bg.year}</span>
+
+                            <div className="screen-star">
                                 <img className="bg-star" src={Star} />
-
                                 <span className="bg-rate" key={Bg.rating}>{Bg.rating}</span>
                             </div>
 
-                     
-
-
-
+                        </div>
 
 
                     </div>

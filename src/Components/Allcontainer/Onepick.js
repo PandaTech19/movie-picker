@@ -49,7 +49,7 @@ export default function Onepick() {
 
     console.log(Onepick)
 
-
+ 
     return (
         <div className="One-container">
 

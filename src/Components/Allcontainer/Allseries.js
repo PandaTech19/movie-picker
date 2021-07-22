@@ -56,7 +56,7 @@ export default function Allseries() {
                 {
                     seriesdata &&
 
-                    seriesdata.map((Tv) => (
+                     seriesdata.map((Tv) => (
 
                         <div className="ser" key={Tv}>
 

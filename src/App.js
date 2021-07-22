@@ -27,14 +27,14 @@ export default function App() {
       <div>
         <Head />
 
-       {/* <div>
+        <div>
           <Switch>
             <Route exact path="/">
-              <Screen />
-              <Allmovies />
+             <Screen />
+             <Allmovies />
               <Allseries />
-              <Footer />
-              <div className="end" />
+             <Footer />
+             <div className="end" />
             </Route>
           </Switch>
 
@@ -45,7 +45,7 @@ export default function App() {
             <Onepick />
             <div className="end2" />
           </Route>
-        </Switch>*/}
+        </Switch>
 
 
 

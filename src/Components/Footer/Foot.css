@@ -25,3 +25,22 @@
     font-weight: bold;
     font-size: 1vw;
 }
+
+@media(max-Width:1200px){
+
+    .Foot-head{
+
+        font-size: 6vw;
+        margin-left: 5vw;
+
+    }
+
+
+    .Foot{
+
+        font-size: 3vw;
+        margin-left: 6vw;
+
+    }
+
+}

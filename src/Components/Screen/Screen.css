@@ -1,5 +1,4 @@
-.Screen-container{
-
+.Screen-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,13 +6,9 @@
   height: 50vw;
   position: static;
   flex-direction: column;
-  }
+}
 
-
- 
-
-  .bg-title{
-
+.bg-title {
   position: absolute;
   left: 81px;
   top: 350px;
@@ -22,16 +17,15 @@
   font-weight: bold;
   font-size: 2.5vw;
   color: #FFFFFF;
+}
 
-  }
+.screen-year {
+  display: none;
+}
 
-
-
-
-.bg-descrip{
-
+.bg-descrip {
   position: absolute;
-  width:65vw;
+  width: 65vw;
   height: 206px;
   left: 82px;
   top: 420px;
@@ -43,27 +37,64 @@
   color: #ffffff;
   background: rgba(0, 0, 0, 0.144);
   border: none;
-
 }
 
-.bg-rating{
+.bg-rating {
   display: flex;
   margin-top: 30vw;
-  margin-right: 86vw;
+  margin-right: 85vw;
 }
 
-.bg-star{
- 
-  width: 1.5vw;
- 
+.bg-star {
+  width: 2vw;
 }
 
-.bg-rate{
+.bg-rate {
   font-size: 2vw;
   margin-left: 1vw;
   color: #FFFFFF;
-
 }
 
+@media(max-width:1200px) {
+  .Screen-container {
+    height: 70vw;
+  }
+  .bg-title {
+    left: 20px;
+    top: 95px;
+    font-size: 5vw;
+  }
+  .bg-descrip {
+    display: none;
+  }
 
+  .bg-rating {
+    margin-top: 20vw;
+    margin-left:30vw;
+    
+  }
 
+  .screen-star {
+    display: flex;
+    margin-left:5vw ;
+  
+    
+  }
+  .screen-year {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    font-size: 7vw;
+  }
+  .bg-star {
+    width: 6vw;
+  }
+  .bg-rate {
+    display: flex;
+    font-size: 6vw;
+  }
+}

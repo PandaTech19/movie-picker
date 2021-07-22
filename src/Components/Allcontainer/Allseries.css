@@ -67,6 +67,32 @@
 }
 
 
+@media(max-Width:1200px){
+
+    .Tv{
+        font-size: 6vw;
+    }
+
+    .series-pics {
+        display: flex;
+        margin-top: 3vw;
+        width: 29vw;
+        height: 40vw;
+    }
+
+    .ser-text {
+        font-size: 3vw;
+        color: #B6B6B6;
+        margin-top: 5vw;
+        width: 25vw;
+    }
+
+    .date-ser {
+        font-size: 4vw;
+        color: #B6B6B6;
+    }
+    
+}
 
 
 
