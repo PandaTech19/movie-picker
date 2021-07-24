@@ -14,7 +14,7 @@ function Head() {
             <div className="Head-search-container">
 
                 <input className="Head-search" type={Text}></input>
-                <Link to="/Results"><img className="search-icon" src={Vector} alt="search-icon" /></Link>
+                <Link  to="/Results"><img className="search-icon" src={Vector} alt="search-icon" /></Link>
 
             </div>
 

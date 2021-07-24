@@ -77,10 +77,12 @@
 
     .search-icon {
         display: flex;
-        width: 10vw;
+        width: 5vw;
         height: 5vw;
         margin-top: -0.5vw;
     }
 
+
+   
 
 }
