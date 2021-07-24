@@ -44,14 +44,13 @@ export default function Allmovies() {
 
     console.log(moviedata)
 
-    var x = parseInt();
-
+    
 
     return (
 
 
 
-        <div className="Movie-container-All">
+        <div className="Movie-container-All"> 
 
 
 

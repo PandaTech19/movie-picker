@@ -10,7 +10,7 @@ import Star from './star.jpg';
 const builder = imageUrlBuilder(SanityClient);
 
 const Opentrailer = (url) => {
-    window.open(url, '_blank', "This is the trailer")
+    window.open(url, "This is the trailer")
 }
 
 function urlFor(source) {
@@ -63,6 +63,7 @@ export default function Onepick() {
 
                 <div className="Text">
                     <p className="Text-title"> <h2>{Onepick.title}</h2></p>
+                   
 
                     <div className="Text-rate">
                         <img className="star" src={Star} />
