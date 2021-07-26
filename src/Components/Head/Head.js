@@ -14,10 +14,10 @@ function Head() {
             <div className="Head-search-container">
 
                 <input className="Head-search" type={Text}></input>
-                <i class="fas fa-search"/>
-            {/*<img     className="search-icon" src={Vector} alt="search-icon" />*/}
+                {/*<i class="fas fa-search" style={{color: "snow",display: "flex",fontSize: "2vw",marginLeft:"0.5vw",marginTop:"0.5vw",}}/>*/}
+                <img className="search-icon" src={Vector} alt="search-icon" />
 
-        </div>
+            </div>
 
         </div >
 
