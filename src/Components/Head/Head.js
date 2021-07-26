@@ -1,6 +1,6 @@
 import React from 'react'
 import Vector from './vector.jpg'
-import { Link } from 'react-router-dom'
+import { Link, Route } from 'react-router-dom'
 
 
 
@@ -14,11 +14,12 @@ function Head() {
             <div className="Head-search-container">
 
                 <input className="Head-search" type={Text}></input>
-                <Link  to="/Results"><img className="search-icon" src={Vector} alt="search-icon" /></Link>
-
-            </div>
+                <i class="fas fa-search"/>
+            {/*<img     className="search-icon" src={Vector} alt="search-icon" />*/}
 
         </div>
+
+        </div >
 
 
     )
