@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 export default function Allmovies() {
 
 
-
     const [moviedata, setmovie] = useState(null);
 
 
@@ -19,17 +18,14 @@ export default function Allmovies() {
         SanityClient.fetch(
 
             `*[_type=='movie']
-    
                     {
                     title,
-                    releaseDate,
+                    Date,
                     slug,
-                    releaseDate,
                     year,
                     poster{asset->{url},
                    
-                   
-
+                
                 }}`
         )
 
@@ -44,18 +40,15 @@ export default function Allmovies() {
 
     console.log(moviedata)
 
-    
+
 
     return (
 
 
 
-        <div className="Movie-container-All"> 
-
-
+        <div className="Movie-container-All">
 
             <h1 className="You">Trending Movies</h1>
-
 
             <div className="von">
 
@@ -63,20 +56,22 @@ export default function Allmovies() {
                     moviedata &&
 
                     moviedata.map((movie) => (
-
+ 
 
 
                         <div className="mov" key={movie}>
 
                             <div className="pic-container">
 
-                                <Link style={{textDecoration:"none"}} to={"/" + movie.slug.current} key={movie.slug.current}>
+                                <Link style={{ textDecoration: "none" }} to={"/" + movie.slug.current} key={movie.slug.current}>
 
                                     <img className="Movie-pics" src={movie.poster.asset.url} alt="poster-image" />
 
+
                                     <h2 className="con-text" key={movie.title}>{movie.title}</h2>
 
-                                    <h2 className="date-mov" key={movie.releaseDate}>{movie.releaseDate.substr(0, 4)}</h2>
+
+                                    <h2 className="date-mov" key={movie.Date}>{movie.Date}</h2>
                                 </Link>
 
                             </div>

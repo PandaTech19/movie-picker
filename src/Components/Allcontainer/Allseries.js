@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function Allseries() {
 
-
+ 
     const [seriesdata, setseries] = useState(null);
 
 
@@ -22,7 +22,7 @@ export default function Allseries() {
                     {
                     title,
                     slug,
-                    releaseDate,
+                    Date,
                     poster{asset->{url},
                    
                    
@@ -68,7 +68,7 @@ export default function Allseries() {
 
                                     <h2 className="ser-text" key={Tv.title}>{Tv.title}</h2>
 
-                                    <h2 className="date-ser" key={Tv.releaseDate}>{Tv.releaseDate}</h2>
+                                    <h2 className="date-ser" key={Tv.Date}>{Tv.Date}</h2>
                                 </Link>
                             </div>
 

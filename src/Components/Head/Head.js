@@ -1,31 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Vector from './vector.jpg'
-import { Link, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 
+export default function Head() {
 
 
-function Head() {
+    const [search, Setsearch] = useState(null);
+    
     return (
 
+
         <div className="Head-container">
+
             <div className="Head-slo"><Link style={{ textDecoration: "none", color: "#FFFFFF" }} to="/">Vilm</Link></div>
 
-            <div className="Head-search-container">
+            <form className="Head-search-container">
 
-                <input className="Head-search" type={Text}></input>
-                {/*<i class="fas fa-search" style={{color: "snow",display: "flex",fontSize: "2vw",marginLeft:"0.5vw",marginTop:"0.5vw",}}/>*/}
-                <img className="search-icon" src={Vector} alt="search-icon" />
+                <input className="Head-search" type={Text} onChange={ (e) => Setsearch(e.target.value)}/>
 
-            </div>
+                <Link to={"/Results/" +search}>
+                    <button  type="submit" style={{ background: "none", border: "none" }}>
+                        <img className="search-icon" src={Vector} alt="search-icon" />
+                    </button>
+                </Link>
+
+            </form>
 
         </div >
-
 
     )
 }
 
-export default Head
 
 
 

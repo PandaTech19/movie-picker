@@ -7,6 +7,7 @@ import Onepick from './Components/Allcontainer/Onepick';
 import Result from './Components/Results/res';
 import Footer from './Components/Footer/Foot';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Mycontext } from './Components/Mycontext';
 
 
 /***************************************************************/
@@ -21,15 +22,21 @@ import './Components/Footer/Foot.css';
 
 
 
+
+
 export default function App() {
+
+
   return (
 
-    <Router>
+    <Mycontext.Provider>
 
-      <div>
-        <Head />
+      <Router>
 
         <div>
+
+          <Head />
+
           <Switch>
             <Route exact path="/">
               <Screen />
@@ -40,28 +47,31 @@ export default function App() {
             </Route>
           </Switch>
 
+
+          <Switch>
+            <Route path="/:slug">
+              <Onepick />
+              <div className="end2" />
+            </Route>
+          </Switch>
+
+
+
+          <Switch>
+            <Route path="/Results/:slug">
+              <Result />
+              <Footer />
+              <div className="end" />
+            </Route>
+          </Switch>
+
+
         </div>
 
-        <Switch>
-          <Route path="/:slug">
-            <Onepick />
-            <div className="end2" />
-          </Route>
-        </Switch>
+      </Router >
 
+    </Mycontext.Provider>
 
-        <Switch>
-          <Route path="/Results">
-            <Result/>
-            <Footer />
-            <div className="end" />
-          </Route>
-        </Switch>
-
-
-      </div>
-
-    </Router >
   )
 }
 
