@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import SanityClient from '../Client';
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams,useLocation } from "react-router-dom";
 
 
 export default function Result() {
 
     const [search, Setsearch] = useState(null);
-    const { slug } = useParams();
+    var { slug } = useParams();
+    var {location}= useLocation();
 
     useEffect(() => {
 

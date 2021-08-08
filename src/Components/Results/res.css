@@ -1,5 +1,9 @@
 .res-container {
     display: flex;
+    /*background: black;
+    z-index: 2;
+    position: relative;
+    margin-top: -6vw;*/
     flex-direction: column;
     justify-content: center;
 }

@@ -4,13 +4,19 @@ import SanityClient from '../Client.js';
 import Portabletext from '@sanity/block-content-to-react';
 import imageUrlBuilder from "@sanity/image-url";
 import Star from './star.jpg';
+import ModalVideo from 'react-modal-video';
+
+
+
+
 
 
 const builder = imageUrlBuilder(SanityClient);
 
-const Opentrailer = (url) => {
+/*const Opentrailer = (url) => {
+
     window.open(url, "This is the trailer")
-}
+}*/
 
 function urlFor(source) {
     return builder.image(source);
@@ -19,7 +25,9 @@ function urlFor(source) {
 export default function Onepick() {
 
     const [Onepick, setonemovie] = useState(null);
+    const [open, setOpen] = useState(false);
     const { slug } = useParams();
+
 
 
     useEffect(() => {
@@ -65,13 +73,20 @@ export default function Onepick() {
                     <div className="Text-rate">
                         <img className="star" src={Star} />
                         <span className="rate">{Onepick.rating}</span>
-                        <button className="Trailer-btn" onClick={() => Opentrailer(Onepick.url)}>Play Trailer</button>
+
+
+                        <ModalVideo channel="youtube" autoplay isOpen={open} videoId={Onepick.url} onClose={() => setOpen(false)} />
+                        <button className="Trailer-btn" onClick={() => setOpen(true)}>
+                            Play Trailer
+                        </button>
+
                     </div>
-                   
+
+
+
+
+
                 </div>
-
-
-
 
             </div>
 
