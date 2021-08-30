@@ -1,13 +1,12 @@
 import React from 'react';
 import Head from "./Components/Head/Head";
-import Head2 from './Components/Head/Head2';
 import Screen from './Components/Screen/Screen';
 import Allmovies from './Components/Allcontainer/Allmovies';
 import Allseries from './Components/Allcontainer/Allseries';
 import Onepick from './Components/Allcontainer/Onepick';
 import Result from './Components/Results/res';
 import Footer from './Components/Footer/Foot';
-import  'react-modal-video/scss/modal-video.scss';
+import 'react-modal-video/scss/modal-video.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
@@ -34,11 +33,13 @@ export default function App() {
 
         <Switch>
           <Route exact path="/">
-            <Head/>
+            <Head />
             <Screen />
             <Allmovies />
             <Allseries />
             <Footer />
+
+
             <div className="end" />
           </Route>
         </Switch>
@@ -47,7 +48,7 @@ export default function App() {
 
         <Switch>
           <Route path="/:slug">
-          <Head/>
+            <Head />
             <Onepick />
             <div className="end2" />
           </Route>

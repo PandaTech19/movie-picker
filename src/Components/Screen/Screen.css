@@ -57,11 +57,12 @@
 
 @media(max-width:1200px) {
   .Screen-container {
+    width: auto;
     height: 70vw;
   }
   .bg-title {
     left: 20px;
-    top: 95px;
+    top: 200px;
     font-size: 5vw;
   }
   .bg-descrip {
