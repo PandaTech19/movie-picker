@@ -24,8 +24,6 @@ export default function Allmovies() {
                     slug,
                     year,
                     poster{asset->{url},
-                   
-                
                 }}`
         )
 

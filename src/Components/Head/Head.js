@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Vector from './vector.jpg'
-import { Link, Redirect } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 
 export default function Head() {
@@ -16,7 +16,7 @@ export default function Head() {
 
             <form className="Head-search-container">
 
-                <input className="Head-search" type={Text} onChange={<Redirect to="/"/>} onChange={(e) => Setsearch(e.target.value)} />
+                <input className="Head-search" type={Text} onChange={(e) => Setsearch(e.target.value)} />
 
 
                 <Link to={"/Results/" + search}>

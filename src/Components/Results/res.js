@@ -7,7 +7,6 @@ export default function Result() {
 
     const [search, Setsearch] = useState(null);
     var { slug } = useParams();
-    var {location}= useLocation();
 
     useEffect(() => {
 
