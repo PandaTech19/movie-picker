@@ -23,14 +23,9 @@ import './Components/Footer/Foot.css';
 
 
 export default function App() {
-
-
   return (
-
     <Router>
-
       <div>
-
         <Switch>
           <Route exact path="/">
             <Head />
@@ -38,13 +33,9 @@ export default function App() {
             <Allmovies />
             <Allseries />
             <Footer />
-
-
             <div className="end" />
           </Route>
         </Switch>
-
-
 
         <Switch>
           <Route path="/:slug">
@@ -53,10 +44,8 @@ export default function App() {
             <div className="end2" />
           </Route>
         </Switch>
-
       </div>
-
-
+      
       <Switch>
         <Route path="/Results/:slug">
           <Result />
@@ -64,11 +53,7 @@ export default function App() {
           <div className="end" />
         </Route>
       </Switch>
-
     </Router >
-
-
-
   )
 }
 

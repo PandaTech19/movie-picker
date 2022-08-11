@@ -10,11 +10,6 @@ export default function Allmovies() {
 
 
     useEffect(() => {
-
-
-
-
-
         SanityClient.fetch(
 
             `*[_type=='movie']
